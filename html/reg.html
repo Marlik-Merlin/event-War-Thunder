@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Thunder Summer Event | Авторизация</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style/reg_v.css"></link>
+</head>
+<body>
+    <div class="tank-bg"></div>
+    
+    <div class="container">
+        <div class="header">
+            <div class="logo">WAR THUNDER</div>
+            <div class="subtitle">Летний ивент 2025</div>
+        </div>
+        
+        <div class="tabs">
+            <div class="tab active" data-tab="login">Вход</div>
+            <div class="tab" data-tab="register">Регистрация</div>
+        </div>
+        
+        <div class="forms-container">
+          
+            <form id="login-form" class="form active">
+                <h2 class="form-title">Войдите в свой аккаунт</h2>
+                
+                <div id="login-message" class="message"></div>
+                
+                <div class="form-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="form-control" id="login-username" placeholder="Имя пользователя" required>
+                </div>
+                
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" class="form-control" id="login-password" placeholder="Пароль" required>
+                    <span class="password-toggle" id="login-toggle">
+                      
+                    </span>
+                </div>
+                
+                <button type="submit" class="btn">Войти</button>
+                
+                <div class="form-footer">
+                    Забыли пароль? <a href="#">Восстановить</a>
+                </div>
+            </form>
+            
+         
+            <form id="register-form" class="form">
+                <h2 class="form-title">Создать новый аккаунт</h2>
+                
+                <div id="register-message" class="message"></div>
+                
+                <div class="form-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="form-control" id="register-username" placeholder="Имя пользователя" required>
+                </div>
+                
+                <div class="form-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" class="form-control" id="register-email" placeholder="Email" required>
+                </div>
+                
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" class="form-control" id="register-password" placeholder="Пароль" required>
+                    <span class="password-toggle" id="register-toggle">
+                        
+                    </span>
+                </div>
+                
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" class="form-control" id="register-confirm" placeholder="Подтвердите пароль" required>
+                </div>
+                
+                <button type="submit" class="btn">Зарегистрироваться</button>
+                
+                <div class="form-footer">
+                    Нажимая кнопку, вы соглашаетесь с <a href="#">правилами</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../script/reg_s.js">
+        
+    </script>
+</body>
+</html>
